@@ -1,5 +1,5 @@
-{% set build = 1 %}
-{% set version = "2.6" %}
+{% set build = 0 %}
+{% set version = "2.7" %}
 
 package:
     name: nnn
@@ -7,7 +7,7 @@ package:
 
 source:
     url: https://github.com/jarun/nnn/archive/v{{version}}.tar.gz
-    sha256: 17fd3e517308e41065594ffe8dcde348b4d10dea4240699f4708337db48b3e25
+    sha256: 0592c7cbcf2cf66cacac49e9204636480820b1bc74e4187dd7ee06945a6d07c5
 
 build:
     number: {{build}}
