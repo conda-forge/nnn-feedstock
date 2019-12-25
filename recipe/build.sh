@@ -1,4 +1,4 @@
 #!/bin/sh
         
-make -j $CPU_COUNT
+LDFLAGS=-lrt make -j $CPU_COUNT
 make install
