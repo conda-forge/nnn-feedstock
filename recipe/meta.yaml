@@ -1,40 +1,40 @@
 {% set build = 0 %}
-{% set version = "3.0" %}
+{% set version = "3.1" %}
 
 package:
-    name: nnn
-    version: {{version}}
+  name: nnn
+  version: {{version}}
 
 source:
-    url: https://github.com/jarun/nnn/archive/v{{version}}.tar.gz
-    sha256: 04db6d6710ce1232c779bf70137a86557e486614e20327717122bb63f36348f7
+  url: https://github.com/jarun/nnn/archive/v{{ version }}.tar.gz
+  sha256: 7231cfb0c634d972d0b86c2b7f7873aef20bdc83e80780e032a7562aca3ec320
 
 build:
-    number: {{build}}
-    skip: true  # [win or osx]
+  number: {{build}}
+  skip: true  # [win or osx]
 
 requirements:
-    build:
-        - make
-        - {{ compiler('c') }}
-        - pkg-config
-    host:
-        - ncurses
-        - readline
-    run:
-        - ncurses
-        - readline
+  build:
+    - make
+    - {{ compiler('c') }}
+    - pkg-config
+  host:
+    - ncurses
+    - readline
+  run:
+    - ncurses
+    - readline
 
 test:
-    commands:
-        - nnn -h
+  commands:
+    - nnn -h
 
 about:
-    home: https://github.com/jarun/nnn/
-    license: BSD
-    license_file: LICENSE
-    summary: Tiny, lightning fast, feature-packed file manager
+  home: https://github.com/jarun/nnn/
+  license: BSD
+  license_file: LICENSE
+  summary: Tiny, lightning fast, feature-packed file manager
 
 extra:
-    recipe-maintainers:
-        - lebedov
+  recipe-maintainers:
+    - lebedov
