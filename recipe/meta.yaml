@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/jarun/nnn/archive/v{{ version }}.tar.gz
-  sha256: 7231cfb0c634d972d0b86c2b7f7873aef20bdc83e80780e032a7562aca3ec320
+  sha256: d70c21b4afa30fa733ab17bb8b45291e8651f2b823fad748ffbdb3b5c3fb0489
 
 build:
   number: {{build}}
