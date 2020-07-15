@@ -5,7 +5,7 @@ Home: https://github.com/jarun/nnn/
 
 Package license: BSD
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Tiny, lightning fast, feature-packed file manager
 
