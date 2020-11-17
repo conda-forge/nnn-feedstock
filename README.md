@@ -5,11 +5,9 @@ Home: https://github.com/jarun/nnn/
 
 Package license: BSD
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/nnn-feedstock/blob/master/LICENSE.txt)
 
 Summary: Tiny, lightning fast, feature-packed file manager
-
-
 
 Current build status
 ====================
