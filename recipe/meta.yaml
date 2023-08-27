@@ -1,19 +1,18 @@
 {% set build = 0 %}
-{% set version = "4.7" %}
+{% set version = "4.9" %}
 
 # fstatat is only available on MacOS 10.10+
-MACOSX_DEPLOYMENT_TARGET:  # [osx and x86_64]
+MACOSX_DEPLOYMENT_TARGET:   # [osx and x86_64]
   - "10.10"                # [osx and x86_64]
-MACOSX_SDK_VERSION:        # [osx and x86_64]
+MACOSX_SDK_VERSION:   # [osx and x86_64]
   - "10.10"                # [osx and x86_64]
-  
 package:
   name: nnn
   version: {{ version }}
 
 source:
   url: https://github.com/jarun/nnn/archive/v{{ version }}.tar.gz
-  sha256: 81ccccc045bfd7ee3f1909cc443158ea0d1833f77d6342fd19c33864a2ab71d1
+  sha256: 9e25465a856d3ba626d6163046669c0d4010d520f2fb848b0d611e1ec6af1b22
 
 build:
   number: {{ build }}
