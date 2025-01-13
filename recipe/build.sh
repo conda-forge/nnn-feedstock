@@ -2,7 +2,7 @@
 
 set -o xtrace -o nounset -o pipefail -o errexit
  
-if [ -z "$OSX_ARCH" ]; then
+if [[ ${target_platform} =~ .*osx.* ]]; then
     export LDFLAGS="${LDFLAGS} -lrt"
 fi
 
