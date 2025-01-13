@@ -2,10 +2,6 @@
 
 set -o xtrace -o nounset -o pipefail -o errexit
  
-if [[ ${target_platform} =~ .*osx.* ]]; then
-    export LDFLAGS="${LDFLAGS} -lrt"
-fi
-
 make -j $CPU_COUNT
 make install
 
