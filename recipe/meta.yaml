@@ -1,11 +1,5 @@
-{% set build = 0 %}
 {% set version = "5.0" %}
 
-# fstatat is only available on MacOS 10.10+
-MACOSX_DEPLOYMENT_TARGET:   # [osx and x86_64]
-  - "10.10"                # [osx and x86_64]
-MACOSX_SDK_VERSION:   # [osx and x86_64]
-  - "10.10"                # [osx and x86_64]
 package:
   name: nnn
   version: {{ version }}
@@ -17,7 +11,7 @@ source:
     - nnn.patch
 
 build:
-  number: {{ build }}
+  number: 1
   skip: true  # [win]
 
 requirements:
@@ -27,9 +21,6 @@ requirements:
     - {{ stdlib("c") }}
     - pkg-config
   host:
-    - ncurses
-    - readline
-  run:
     - ncurses
     - readline
 
@@ -45,4 +36,5 @@ about:
 
 extra:
   recipe-maintainers:
+    - danielnachun
     - lebedov
