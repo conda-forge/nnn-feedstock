@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 5.1
+  version: "5.2"
 
 package:
   name: nnn
@@ -9,12 +9,12 @@ package:
 
 source:
   url: https://github.com/jarun/nnn/archive/v${{ version }}.tar.gz
-  sha256: 9faaff1e3f5a2fd3ed570a83f6fb3baf0bfc6ebd6a9abac16203d057ac3fffe3
+  sha256: f166eda5093ac8dcf8cbbc6224123a32c53cf37b82c5c1cb48e2e23352754030
   patches:
     - nnn.patch
 
 build:
-  number: 1
+  number: 0
   skip: win
 
 requirements:
